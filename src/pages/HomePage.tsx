@@ -2,8 +2,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CalendarClock, Music, Headphones, Check } from 'lucide-react';
+import emailjs from 'emailjs-com'
+
+
 
 const HomePage: React.FC = () => {
+
+
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
@@ -100,26 +106,26 @@ const HomePage: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Stat 1 */}
             <div className="text-center text-white animate-fade-in">
-              <h3 className="text-5xl font-bold mb-2">200+</h3>
+              <h3 className="text-5xl font-bold mb-2">20+</h3>
               <p className="text-white/80 text-lg">Satisfied Clients</p>
             </div>
 
             {/* Stat 2 */}
             <div className="text-center text-white animate-fade-in" style={{animationDelay: '0.1s'}}>
-              <h3 className="text-5xl font-bold mb-2">500+</h3>
+              <h3 className="text-5xl font-bold mb-2">50+</h3>
               <p className="text-white/80 text-lg">Projects Completed</p>
             </div>
 
             {/* Stat 3 */}
             <div className="text-center text-white animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <h3 className="text-5xl font-bold mb-2">15+</h3>
+              <h3 className="text-5xl font-bold mb-2">5+</h3>
               <p className="text-white/80 text-lg">Years Experience</p>
             </div>
 
             {/* Stat 4 */}
             <div className="text-center text-white animate-fade-in" style={{animationDelay: '0.3s'}}>
-              <h3 className="text-5xl font-bold mb-2">20+</h3>
-              <p className="text-white/80 text-lg">Industry Awards</p>
+              <h3 className="text-5xl font-bold mb-2">10+</h3>
+              <p className="text-white/80 text-lg">Industry Hits</p>
             </div>
           </div>
         </div>
@@ -157,7 +163,7 @@ const HomePage: React.FC = () => {
               </Link>
             </div>
 
-            <div className="glass-card p-8 shadow-lg animate-slide-in-right">
+            <div className="glass-card p-8 shadow-lg animate-slide-in-rightc">
               <h3 className="text-2xl font-semibold mb-6 text-center">Book A Session</h3>
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
