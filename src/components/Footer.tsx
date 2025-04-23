@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="flex flex-col">
             <h2 className="text-2xl font-bold mb-4">
-              RHYTHM <span className="text-purple-light">&</span> MUSE
+              COACHSAHB
             </h2>
             <p className="text-gray-300 mb-6">
               Elevating artists through premium music production and sonic excellence.
@@ -122,15 +122,10 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8 mt-8 text-center sm:text-left">
           <div className="flex flex-col sm:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Rhythm & Muse. All rights reserved.
+              © {currentYear} COACHSAHB. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 sm:mt-0">
-              <Link to="/privacy" className="text-gray-400 text-sm hover:text-purple-light transition-colors duration-300">
-                Privacy Policy
-              </Link>
-              <Link to="/terms" className="text-gray-400 text-sm hover:text-purple-light transition-colors duration-300">
-                Terms of Service
-              </Link>
+          
             </div>
           </div>
         </div>
