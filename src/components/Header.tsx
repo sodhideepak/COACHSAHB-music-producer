@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       <div className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl font-bold text-dark">
-            RHYTHM <span className="text-purple">&</span> MUSE
+            COACHSAHB
           </span>
         </Link>
 
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
         <div className="flex flex-col h-full p-8">
           <div className="flex justify-between items-center">
             <span className="text-2xl font-bold text-dark">
-              RHYTHM <span className="text-purple">&</span> MUSE
+              COACHSAHB 
             </span>
             <button 
               className="text-dark" 
@@ -101,7 +101,7 @@ const Header: React.FC = () => {
               <X size={24} />
             </button>
           </div>
-          <nav className="flex flex-col space-y-8 mt-16">
+          <nav className="flex flex-col space-y-8 bg-gray-900 mt-16">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
