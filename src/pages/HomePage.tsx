@@ -1,12 +1,60 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { CalendarClock, Music, Headphones, Check } from 'lucide-react';
 import emailjs from 'emailjs-com'
+import { log } from 'console';
 
 
 
 const HomePage: React.FC = () => {
+
+
+  const [formData, setFormData] = useState({
+    name:"",
+    email:"",
+    date: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_9ucht8e", // Replace with your EmailJS service ID
+        "template_57v46hb", // Replace with your EmailJS template ID
+        {
+          name:formData.name,
+          email:formData.email,
+          to_mail:"deepaksodhi0023@gmail.com",
+          date: formData.date,
+          service: formData.service,
+          message: formData.message,
+        },
+        "cok8QRUrga9XVDZ09" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Appointment booked successfully!");
+          console.log("helloo");
+        },
+        (error) => {
+          alert("Failed to send email. Please try again.");
+          console.error("EmailJS Error:", error);
+
+        }
+      );
+  };
 
 
 
@@ -165,7 +213,7 @@ const HomePage: React.FC = () => {
 
             <div className="glass-card p-8 shadow-lg animate-slide-in-rightc">
               <h3 className="text-2xl font-semibold mb-6 text-center">Book A Session</h3>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -174,6 +222,8 @@ const HomePage: React.FC = () => {
                     <input 
                       type="text" 
                       id="name" 
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="John Doe"
                     />
@@ -185,6 +235,8 @@ const HomePage: React.FC = () => {
                     <input 
                       type="email" 
                       id="email" 
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="johndoe@example.com"
                     />
@@ -196,11 +248,13 @@ const HomePage: React.FC = () => {
                   </label>
                   <select 
                     id="service" 
+                    value={formData.service} // Bind the value to formData.service
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent bg-white"
                   >
                     <option value="" disabled selected>Select a service</option>
-                    <option value="production">Music Production</option>
-                    <option value="mixing">Mixing & Mastering</option>
+                    <option value="Music production">Music Production</option>
+                    <option value="mixing & Mastering">Mixing & Mastering</option>
                     <option value="recording">Recording Session</option>
                     <option value="development">Artist Development</option>
                   </select>
@@ -211,7 +265,10 @@ const HomePage: React.FC = () => {
                   </label>
                   <input 
                     type="date" 
+          
                     id="date" 
+                    value={formData.date}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                   />
                 </div>
@@ -221,6 +278,8 @@ const HomePage: React.FC = () => {
                   </label>
                   <textarea 
                     id="message" 
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={4} 
                     className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                     placeholder="Tell us about your project..."
