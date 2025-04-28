@@ -1,8 +1,119 @@
 
-import React from 'react';
+import React,{useState} from 'react';
+import emailjs from 'emailjs-com'
 import { Mail, Phone, Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
 
 const ContactPage: React.FC = () => {
+
+
+
+  const [formData, setFormData] = useState({
+    name:"",
+    email:"",
+    subject: "",
+    message: ""
+  });
+
+
+
+  const [secondformData, setsecondFormData] = useState({
+    name:"",
+    email:"",
+    phone_number:"",
+    service_needed:"",
+    preffered_date:"",
+    preffered_time:"",
+    project_details: ""
+  });
+
+
+
+  const secondhandleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { id, value } = e.target;
+    setsecondFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+
+  const handlesecondSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_9ucht8e", // Replace with your EmailJS service ID
+        "template_tyl5nip", // Replace with your EmailJS template ID
+        {
+          name:formData.name,
+          email:formData.email,
+          to_mail:"deepaksodhi0023@gmail.com",
+          phone:secondformData.phone_number,
+    service_needed:secondformData.service_needed,
+    preffered_date:secondformData.preffered_date,
+    preffered_time:secondformData.preffered_time,
+    project_Details: secondformData.project_details
+          // date: formData.date,
+          // service: formData.service
+        },
+        "cok8QRUrga9XVDZ09" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Enquiry for Booking a Session sent successfully!");
+          // console.log("helloo");
+        },
+        (error) => {
+          alert("Failed to send email. Please try again.");
+          console.error("EmailJS Error:", error);
+
+        }
+      );
+  };
+
+
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_9ucht8e", // Replace with your EmailJS service ID
+        "template_t626lkg", // Replace with your EmailJS template ID
+        {
+          name:formData.name,
+          email:formData.email,
+          to_mail:"deepaksodhi0023@gmail.com",
+          // date: formData.date,
+          // service: formData.service,
+          message: formData.message,
+        },
+        "cok8QRUrga9XVDZ09" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          alert("Enquiry send successfully!");
+          console.log("helloo");
+        },
+        (error) => {
+          alert("Failed to send email. Please try again.");
+          console.error("EmailJS Error:", error);
+
+        }
+      );
+  };
+
+
+
+
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -86,7 +197,7 @@ const ContactPage: React.FC = () => {
               <p className="text-gray-600 mb-8">
                 Fill out the form below, and we'll get back to you as soon as possible.
               </p>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -95,6 +206,8 @@ const ContactPage: React.FC = () => {
                     <input 
                       type="text" 
                       id="name" 
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="John Doe"
                     />
@@ -106,6 +219,8 @@ const ContactPage: React.FC = () => {
                     <input 
                       type="email" 
                       id="email" 
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="johndoe@example.com"
                     />
@@ -118,6 +233,8 @@ const ContactPage: React.FC = () => {
                   <input 
                     type="text" 
                     id="subject" 
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                     placeholder="How can we help you?"
                   />
@@ -128,6 +245,8 @@ const ContactPage: React.FC = () => {
                   </label>
                   <textarea 
                     id="message" 
+                    value={formData.message}
+                    onChange={handleChange}
                     rows={6} 
                     className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                     placeholder="Tell us about your project or inquiry..."
@@ -173,7 +292,7 @@ const ContactPage: React.FC = () => {
 
           <div className="max-w-3xl mx-auto">
             <div className="glass-card p-8 shadow-lg animate-fade-in">
-              <form className="space-y-6">
+              <form onSubmit={handlesecondSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="booking-name" className="block text-sm font-medium text-gray-700 mb-1">
@@ -181,6 +300,9 @@ const ContactPage: React.FC = () => {
                     </label>
                     <input 
                       type="text" 
+                      value={secondformData.name}
+                      onChange={secondhandleChange}
+                      // onChange={handleChange}
                       id="booking-name" 
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="John Doe"
@@ -192,6 +314,9 @@ const ContactPage: React.FC = () => {
                     </label>
                     <input 
                       type="email" 
+                      value={secondformData.email}
+                      onChange={secondhandleChange}
+                      // onChange={handleChange}
                       id="booking-email" 
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="johndoe@example.com"
@@ -205,6 +330,9 @@ const ContactPage: React.FC = () => {
                     </label>
                     <input 
                       type="tel" 
+                      value={secondformData.phone_number}
+                      onChange={secondhandleChange}
+                      // onChange={handleChange}
                       id="booking-phone" 
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="(555) 123-4567"
@@ -216,6 +344,9 @@ const ContactPage: React.FC = () => {
                     </label>
                     <select 
                       id="booking-service" 
+                      value={secondformData.service_needed}
+                      onChange={secondhandleChange}
+                      // onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent bg-white"
                     >
                       <option value="" disabled selected>Select a service</option>
@@ -234,6 +365,9 @@ const ContactPage: React.FC = () => {
                     <input 
                       type="date" 
                       id="booking-date" 
+                      value={secondformData.preffered_date}
+                      onChange={secondhandleChange}
+                      // onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                     />
                   </div>
@@ -243,6 +377,9 @@ const ContactPage: React.FC = () => {
                     </label>
                     <select 
                       id="booking-time" 
+                      value={secondformData.preffered_time}
+                      onChange={secondhandleChange}
+                      // onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent bg-white"
                     >
                       <option value="" disabled selected>Select a time</option>
@@ -258,6 +395,9 @@ const ContactPage: React.FC = () => {
                   </label>
                   <textarea 
                     id="booking-details" 
+                    value={secondformData.project_details}
+                    onChange={secondhandleChange}
+                    // onChange={handleChange}
                     rows={4} 
                     className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                     placeholder="Tell us about your project and any specific requirements..."

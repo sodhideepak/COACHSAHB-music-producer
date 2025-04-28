@@ -14,6 +14,7 @@ const HomePage: React.FC = () => {
     name:"",
     email:"",
     date: "",
+    phone:"",
     service: "",
     message: "",
   });
@@ -32,11 +33,12 @@ const HomePage: React.FC = () => {
     emailjs
       .send(
         "service_9ucht8e", // Replace with your EmailJS service ID
-        "template_57v46hb", // Replace with your EmailJS template ID
+        "template_05corq6", // Replace with your EmailJS template ID
         {
           name:formData.name,
           email:formData.email,
           to_mail:"deepaksodhi0023@gmail.com",
+          phone_number:formData.phone,
           date: formData.date,
           service: formData.service,
           message: formData.message,
