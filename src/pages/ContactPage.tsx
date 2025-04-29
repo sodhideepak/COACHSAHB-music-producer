@@ -303,7 +303,7 @@ const ContactPage: React.FC = () => {
                       value={secondformData.name}
                       onChange={secondhandleChange}
                       // onChange={handleChange}
-                      id="booking-name" 
+                      id="name" 
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="John Doe"
                     />
@@ -317,7 +317,7 @@ const ContactPage: React.FC = () => {
                       value={secondformData.email}
                       onChange={secondhandleChange}
                       // onChange={handleChange}
-                      id="booking-email" 
+                      id="email" 
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="johndoe@example.com"
                     />
@@ -333,7 +333,7 @@ const ContactPage: React.FC = () => {
                       value={secondformData.phone_number}
                       onChange={secondhandleChange}
                       // onChange={handleChange}
-                      id="booking-phone" 
+                      id="phone_number" 
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                       placeholder="(555) 123-4567"
                     />
@@ -343,7 +343,7 @@ const ContactPage: React.FC = () => {
                       Service Needed
                     </label>
                     <select 
-                      id="booking-service" 
+                      id="service_needed" 
                       value={secondformData.service_needed}
                       onChange={secondhandleChange}
                       // onChange={handleChange}
@@ -364,7 +364,7 @@ const ContactPage: React.FC = () => {
                     </label>
                     <input 
                       type="date" 
-                      id="booking-date" 
+                      id="preffered_date" 
                       value={secondformData.preffered_date}
                       onChange={secondhandleChange}
                       // onChange={handleChange}
@@ -394,7 +394,7 @@ const ContactPage: React.FC = () => {
                     Project Details
                   </label>
                   <textarea 
-                    id="booking-details" 
+                    id="project_details" 
                     value={secondformData.project_details}
                     onChange={secondhandleChange}
                     // onChange={handleChange}
