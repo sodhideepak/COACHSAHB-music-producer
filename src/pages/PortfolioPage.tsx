@@ -13,31 +13,50 @@ interface PortfolioItem {
     appleMusic?: string;
     soundCloud?: string;
   };
+  videosrc?: string;
   credits: string[];
   description: string;
 }
 
 const portfolioData: PortfolioItem[] = [
+  // {
+  //   id: 1,
+  //   title: "DO PALL",
+  //   artist: "Surinder Kaur",
+  //   category: "Pop",
+  //   image: "https://i.ytimg.com/vi/MXprAR_7Omc/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGMgZShOMA8=&rs=AOn4CLCu3RDVhWLGgu1353nTYzdDcx_Bkg",
+    
+  //   streamingLinks: {
+  //     spotify: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbl9tVVQzcUYyQjJKOXNoSDE0WXdueHdvYzF6UXxBQ3Jtc0tuU1g4eEh5TlkxZDZMLUdULXpzeUJFZHAyQy1tTk50OWx0RXBteGQyeFBwQjM4ZERud1JjZTM3dWp2SFNVYXdhUnRXTml2MjJqU3g2RVpLdkFIcDdNUmF3ZWRXWGFSNGM4eFdWR001NVEtRkcxckJmVQ&q=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F37Yn2x4PABhKnsgo3hMMmY%3Fsi%3DHZp8ahJlR_GyJ2RbAcw-Gw%26context%3Dspotify%253Aalbum%253A57qYgk019OMuVJM5Bc5Q13&v=MXprAR_7Omc",
+  //     appleMusic: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazVDV2pZMXM2WTJveWJDZ3pQRjVTRVFzUnAwUXxBQ3Jtc0tud2tkRTRMV1QyWWJQcWp6OGZUMDhRQnJYX2ZibkF6ejlFOHJyVGVVcEV6WlRIaE9IOHNORmNqRnh5SnRNR19xT3luaDhVRkFhSy05bWlWS20xVFd1LWZ2eFlSbzU5TmI1VERzYWpWeERoYmJnN0RuRQ&q=https%3A%2F%2Fmusic.apple.com%2Fin%2Falbum%2Fdo-pall%2F1747532315%3Fi%3D1747532328&v=MXprAR_7Omc",
+  //     soundCloud: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa1RTU1RNMGJFQXFHVGxwOTZ1c0FzOVlyZldMQXxBQ3Jtc0ttWDV2ODVwcDdkN3JJTU52REZpcThhWDFqZzBKYmhINVowNDZXU1U4WHd5c3NUSVJuNWlGYlp0ZHpOQUxiS05Dd1M0c3kxeUtLUk9hNnVOUjdsUkFmby1pSHRCSFliVUhoU29xbXhURW5oYlF5dURyYw&q=https%3A%2F%2Fsoundcloud.com%2Fcoachsahb%2Fdo-pall-surinder-kaur&v=MXprAR_7Omc"
+  //   },
+  //   credits: [
+  //     "Artist- Surinder Kaur"
+  //   ],
+  //   description: "A pop anthem with catchy melodies and powerful vocals. This project was a collaboration with Sarah Johnson, focusing on creating a radio-ready hit with contemporary production techniques."
+  // },
   {
     id: 1,
-    title: "Midnight Dreams",
-    artist: "Sarah Johnson",
+    title: "DO PALL",
+    artist: "Surinder Kaur",
     category: "Pop",
-    image: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    image: "https://i.ytimg.com/vi/MXprAR_7Omc/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGMgZShOMA8=&rs=AOn4CLCu3RDVhWLGgu1353nTYzdDcx_Bkg",
+    
     streamingLinks: {
-      spotify: "https://spotify.com",
-      appleMusic: "https://music.apple.com",
-      soundCloud: "https://soundcloud.com"
+      spotify: "https://open.spotify.com/track/37Yn2x4PABhKnsgo3hMMmY",
+      appleMusic: "https://music.apple.com/in/album/do-pall/1747532315?i=1747532328",
+      soundCloud: "https://soundcloud.com/coachsahb/do-pall-surinder-kaur"
     },
+    
+    videosrc: "https://www.youtube.com/embed/MXprAR_7Omc?si=vWzhFhRhCk66Xmqf" ,
+  
     credits: [
-      "Production: Rhythm & Muse",
-      "Mixing: John Smith",
-      "Mastering: David Wilson",
-      "Vocals: Sarah Johnson",
-      "Guitar: Michael Brown"
+      "Artist- Surinder Kaur"
     ],
+    
     description: "A pop anthem with catchy melodies and powerful vocals. This project was a collaboration with Sarah Johnson, focusing on creating a radio-ready hit with contemporary production techniques."
-  },
+  },  
   {
     id: 2,
     title: "Urban Echoes",
@@ -257,46 +276,51 @@ const PortfolioPage: React.FC = () => {
             <div className="p-8">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/2">
-                  <img 
-                    src={selectedItem.image} 
-                    alt={`${selectedItem.title} by ${selectedItem.artist}`}
-                    className="w-full h-auto rounded-lg"
-                  />
-                  <div className="mt-6">
-                    <h3 className="text-lg font-semibold mb-2">Streaming Links</h3>
-                    <div className="flex gap-4">
-                      {selectedItem.streamingLinks.spotify && (
-                        <a 
-                          href={selectedItem.streamingLinks.spotify} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn-secondary py-2"
-                        >
-                          Spotify
-                        </a>
-                      )}
-                      {selectedItem.streamingLinks.appleMusic && (
-                        <a 
-                          href={selectedItem.streamingLinks.appleMusic} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn-secondary py-2"
-                        >
-                          Apple Music
-                        </a>
-                      )}
-                      {selectedItem.streamingLinks.soundCloud && (
-                        <a 
-                          href={selectedItem.streamingLinks.soundCloud} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="btn-secondary py-2"
-                        >
-                          SoundCloud
-                        </a>
-                      )}
-                    </div>
-                  </div>
+                <iframe
+                  width="100%"
+                  height="315"
+                  src={`${selectedItem.videosrc}`}
+                  title={`${selectedItem.title} by ${selectedItem.artist}`}
+                  className="w-full h-60 rounded-lg"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+                <div className="mt-6">
+              <h3 className="text-lg font-semibold mb-1">Streaming Links</h3>
+              <div className="flex gap-2">
+                {selectedItem.streamingLinks.spotify && (
+                  <a 
+                    href={selectedItem.streamingLinks.spotify} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-secondary py-2"
+                  >
+                    Spotify
+                  </a>
+                )}
+                {selectedItem.streamingLinks.appleMusic && (
+                  <a 
+                    href={selectedItem.streamingLinks.appleMusic} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-secondary py-1"
+                  >
+                    Apple Music
+                  </a>
+                )}
+                {selectedItem.streamingLinks.soundCloud && (
+                  <a 
+                    href={selectedItem.streamingLinks.soundCloud} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-secondary py-2"
+                  >
+                    SoundCloud
+                  </a>
+                )}
+              </div>
+            </div>
                 </div>
                 <div className="md:w-1/2">
                   <span className="bg-purple/10 text-purple px-3 py-1 rounded-full text-sm">

@@ -42,10 +42,10 @@ const AboutPage: React.FC = () => {
   ];
 
   const stats = [
-    { label: 'Years Experience', value: '15+' },
-    { label: 'Projects Completed', value: '500+' },
-    { label: 'Awards Won', value: '20+' },
-    { label: 'Happy Clients', value: '200+' }
+    { label: 'Years Experience', value: '5+' },
+    { label: 'Projects Completed', value: '50+' },
+    { label: 'Industry Hits', value: '10+' },
+    { label: 'Happy Clients', value: '20+' }
   ];
 
   return (
@@ -56,7 +56,7 @@ const AboutPage: React.FC = () => {
           <div className="max-w-3xl animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
             <p className="text-xl text-gray-300">
-              Meet the team behind Rhythm & Muse and discover our journey in music production.
+              Meet the team behind CoachSahb and discover our journey in music production.
             </p>
           </div>
         </div>
@@ -69,16 +69,16 @@ const AboutPage: React.FC = () => {
             <div className="animate-slide-up">
               <h2 className="heading-secondary mb-6">Our Story</h2>
               <p className="text-gray-700 mb-6 text-lg">
-                Rhythm & Muse was founded in 2008 by David Mitchell, a passionate music producer with a vision to create a studio where artists could fully express their creativity and develop their unique sound.
+              Coachsahb is a seasoned music professional with over 5 years of industry experience, delivering numerous hit productions across a wide range of genres. Known for a dynamic sound and innovative approach, Coachsahb has worked on multiple high-impact projects, shaping tracks that resonate with audiences worldwide. 
               </p>
               <p className="text-gray-700 mb-6 text-lg">
-                What began as a small recording studio has evolved into a full-service music production facility, known for its commitment to quality, innovation, and artist development.
+              From soulful melodies to hard-hitting beats, every production reflects a deep understanding of music and a commitment to quality.
+
+
               </p>
-              <p className="text-gray-700 mb-6 text-lg">
-                Over the years, we've had the privilege of working with talented artists from various genres, helping them bring their musical visions to life and achieve their goals in the industry.
-              </p>
+            
               <p className="text-gray-700 text-lg">
-                Today, Rhythm & Muse stands as a testament to our dedication to the craft of music production and our passion for creating impactful sound experiences.
+                Today, CoachSahb stands as a testament to our dedication to the craft of music production and our passion for creating impactful sound experiences.
               </p>
             </div>
             <div className="relative h-[500px] animate-slide-in-right">
@@ -209,72 +209,59 @@ const AboutPage: React.FC = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-light">
-        <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up">
-            <h2 className="heading-secondary mb-4">Meet Our Team</h2>
-            <p className="text-gray-600 text-lg">
-              The talented professionals behind Rhythm & Muse.
-            </p>
+
+
+
+          <section className="py-20 bg-light">
+      <div className="container-custom">
+        <div className="max-w-3xl mx-auto text-center mb-16 animate-slide-up">
+          <h2 className="heading-secondary mb-4">Meet Our Team</h2>
+          <p className="text-gray-600 text-lg">
+            The talented professionals behind CoachSahb.
+          </p>
+        </div>
+
+        {/* Centered grid with 50% width */}
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Team Member 2 */}
+          <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <div className="aspect-w-1 aspect-h-1 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1635&q=80" 
+                alt="Sarah Phillips - Senior Sound Engineer" 
+                className="w-full h-64 object-cover object-center"
+              />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-1">Sarah Phillips</h3>
+              <p className="text-purple mb-4">Senior Sound Engineer</p>
+              <p className="text-gray-600">
+                Sarah's technical prowess and keen ear for detail have made her one of the most sought-after engineers in the industry.
+              </p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Team Member 1 */}
-            <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in">
-              <div className="aspect-w-1 aspect-h-1 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1587723958656-ee042cc565a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" 
-                  alt="David Mitchell - Founder & Lead Producer" 
-                  className="w-full h-64 object-cover object-center"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">David Mitchell</h3>
-                <p className="text-purple mb-4">Founder & Lead Producer</p>
-                <p className="text-gray-600">
-                  With over 20 years of experience in the music industry, David brings unparalleled expertise and vision to every project.
-                </p>
-              </div>
+          {/* Team Member 3 */}
+          <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="aspect-w-1 aspect-h-1 relative">
+              <img 
+                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" 
+                alt="Michael Brown - Music Director" 
+                className="w-full h-64 object-cover object-center"
+              />
             </div>
-
-            {/* Team Member 2 */}
-            <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in" style={{animationDelay: '0.1s'}}>
-              <div className="aspect-w-1 aspect-h-1 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1635&q=80" 
-                  alt="Sarah Phillips - Senior Sound Engineer" 
-                  className="w-full h-64 object-cover object-center"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Sarah Phillips</h3>
-                <p className="text-purple mb-4">Senior Sound Engineer</p>
-                <p className="text-gray-600">
-                  Sarah's technical prowess and keen ear for detail have made her one of the most sought-after engineers in the industry.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in" style={{animationDelay: '0.2s'}}>
-              <div className="aspect-w-1 aspect-h-1 relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" 
-                  alt="Michael Brown - Music Director" 
-                  className="w-full h-64 object-cover object-center"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-1">Michael Brown</h3>
-                <p className="text-purple mb-4">Music Director</p>
-                <p className="text-gray-600">
-                  Michael's diverse musical background and creative approach bring unique perspectives to each production.
-                </p>
-              </div>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-1">Michael Brown</h3>
+              <p className="text-purple mb-4">Music Director</p>
+              <p className="text-gray-600">
+                Michael's diverse musical background and creative approach bring unique perspectives to each production.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-purple text-white">

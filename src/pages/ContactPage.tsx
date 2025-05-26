@@ -10,6 +10,7 @@ const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
     name:"",
     email:"",
+    phone:"",
     subject: "",
     message: ""
   });
@@ -51,7 +52,7 @@ const ContactPage: React.FC = () => {
     emailjs
       .send(
         "service_9ucht8e", // Replace with your EmailJS service ID
-        "template_tyl5nip", // Replace with your EmailJS template ID
+        "template_05corq6", // Replace with your EmailJS template ID
         {
           name:formData.name,
           email:formData.email,
@@ -87,13 +88,13 @@ const ContactPage: React.FC = () => {
     emailjs
       .send(
         "service_9ucht8e", // Replace with your EmailJS service ID
-        "template_t626lkg", // Replace with your EmailJS template ID
+        "template_o0l9kmd", // Replace with your EmailJS template ID
         {
           name:formData.name,
           email:formData.email,
           to_mail:"deepaksodhi0023@gmail.com",
-          // date: formData.date,
-          // service: formData.service,
+          phone: formData.phone,
+          subject: formData.subject,
           message: formData.message,
         },
         "cok8QRUrga9XVDZ09" // Replace with your EmailJS user ID
@@ -225,6 +226,20 @@ const ContactPage: React.FC = () => {
                       placeholder="johndoe@example.com"
                     />
                   </div>
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                    Phone Number
+                  </label>
+                  <input 
+                    type="tel" 
+                    id="phone" 
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
+                    placeholder="How can we help you?"
+                  />
                 </div>
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
@@ -376,7 +391,7 @@ const ContactPage: React.FC = () => {
                       Preferred Time
                     </label>
                     <select 
-                      id="booking-time" 
+                      id="preffered_time" 
                       value={secondformData.preffered_time}
                       onChange={secondhandleChange}
                       // onChange={handleChange}
