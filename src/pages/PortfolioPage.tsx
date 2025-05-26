@@ -39,7 +39,7 @@ const portfolioData: PortfolioItem[] = [
   {
     id: 1,
     title: "DO PALL",
-    artist: "Surinder Kaur",
+    artist: "SURINDER KAUR X COACHSAHB",
     category: "Pop",
     image: "https://i.ytimg.com/vi/MXprAR_7Omc/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGGMgZShOMA8=&rs=AOn4CLCu3RDVhWLGgu1353nTYzdDcx_Bkg",
     
@@ -50,7 +50,7 @@ const portfolioData: PortfolioItem[] = [
     },
     
     videosrc: "https://www.youtube.com/embed/MXprAR_7Omc?si=vWzhFhRhCk66Xmqf" ,
-  
+    
     credits: [
       "Artist- Surinder Kaur"
     ],
@@ -59,101 +59,120 @@ const portfolioData: PortfolioItem[] = [
   },  
   {
     id: 2,
-    title: "Urban Echoes",
-    artist: "Marcus King",
+    title: "CHANNA JAYI NA",
+    artist: "KULDEEP MANAK X COACHSAHB",
     category: "Hip Hop",
-    image: "https://images.unsplash.com/photo-1571173159696-e5c0829d970f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    image: "https://i.ytimg.com/vi/KsIhMdS8Vpw/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBgcrzru4BbPQxSudH5fvexFgfczA",
     streamingLinks: {
-      spotify: "https://spotify.com",
-      soundCloud: "https://soundcloud.com"
+      spotify: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmZQMHllbkZ4THJfdURhMlN3QXNkM2Z5eDVWZ3xBQ3Jtc0trcHBjcjNxSDBJcEhwc3RsZFpTVm5hS2hXams4XzZ3NVpxNDBSSjRlTmVtOEJDS25QMzVzMTZjX0ItaHV1S0NrZENJSDRHQTE5NThWTk5RYk5FdXBHNEl6SkRENmd5eVNOTkowSU5PY0JlOElzcEtkRQ&q=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F3dZIRFXRiVo1OGelilhsAN%3Fsi%3D7ULuBbvqTtKXOrMT0G7wHQ&v=KsIhMdS8Vpw",
+      appleMusic: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqazJXZHpnNnlSWXhnQnV6VEhfTzdNMzc2Z2VlUXxBQ3Jtc0tuSWhLbHhBZTU1Y1pnOXJPWUY1M3Q3b1lNcGdoTmxmblkxMFZnbXVoSVZESjlURVppS1NYOTFCWkFVZEY5ZjVJLWRETmtqNkJxV1BvYUZ0eU5LZEhBdjNWNXZYbWNoOFNKQmlnTW1JZTd6WmVZNDd2aw&q=https%3A%2F%2Fmusic.apple.com%2Fin%2Falbum%2Fchanna-jayi-na%2F1747532713%3Fi%3D1747533182&v=KsIhMdS8Vpw"
     },
     credits: [
-      "Production: Rhythm & Muse",
-      "Mixing: Alex Johnson",
-      "Mastering: David Wilson",
-      "Vocals: Marcus King",
-      "Additional Programming: Rhythm & Muse"
+      "Artist- Kuldeep Manak"
     ],
+    videosrc: "https://www.youtube.com/embed/NaJr3BXW4hk?si=BRIqrmgm2PpDhGi4" ,
     description: "A hip hop project featuring innovative beats and powerful lyrics. We worked with Marcus to develop a unique sound that stands out in today's hip hop landscape."
   },
   {
     id: 3,
-    title: "Acoustic Memories",
-    artist: "Emily Carter",
+    title: "BILLIAN AKHAAN",
+    artist: "SURJIT BINDRAKHIA X COACHSAHB",
     category: "Folk",
-    image: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    image: "https://i.ytimg.com/vi/NaJr3BXW4hk/hqdefault.jpg?sqp=-oaymwFBCNACELwBSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AH-CYAC0AWKAgwIABABGEwgZSgtMA8=&rs=AOn4CLAAK-_5qTzCv4AIGEJclP60Zrp1Ag",
     streamingLinks: {
-      spotify: "https://spotify.com",
-      appleMusic: "https://music.apple.com"
+      // spotify: "https://spotify.com",
+      // appleMusic: "https://music.apple.com",
+      soundCloud: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWlZbG5CX3M4d1dVVWpxc0pJWkF0MHpEZHhTUXxBQ3Jtc0ttT2VDT2hZWm5XQzB6S3dyTUhKWjhnUkdYRERONE1Wa0JvVFB0N19kbVhnTnZQS3h1QXg3VUhJc0ZydHp5cFRwNW1aVVJlS1FtZnFmNkdrbzQtSzdrWGpkX3kyRjZDVklySVhqeVFpdUJMTWhyelZsNA&q=https%3A%2F%2Fsoundcloud.com%2Fcoachsahb%2Fbillian-akhian&v=NaJr3BXW4hk"
     },
+    videosrc: "https://www.youtube.com/embed/NaJr3BXW4hk?si=BRIqrmgm2PpDhGi4" ,
     credits: [
-      "Production: Rhythm & Muse",
-      "Mixing: John Smith",
-      "Mastering: Sarah Phillips",
-      "Vocals & Guitar: Emily Carter",
-      "Piano: Rhythm & Muse"
+      "Artist- Surjit Bindrakhia"
     ],
     description: "A folk album featuring acoustic instruments and heartfelt lyrics. This project focused on capturing the authentic performance of Emily to create an intimate listening experience."
   },
   {
     id: 4,
-    title: "Electric Dreams",
-    artist: "The Voltage",
+    title: "JEONA MORH",
+    artist: "KULDEEP MANAK X COACHSAHB",
     category: "Electronic",
-    image: "https://images.unsplash.com/photo-1642009824979-caddf3d12e3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    image: "https://i.ytimg.com/vi/jymN5Qvedlg/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDwZNekBnCFMQR44-Y8LpayUngsDg",
     streamingLinks: {
-      spotify: "https://spotify.com",
-      soundCloud: "https://soundcloud.com"
+      spotify: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUc3V2hCOTRpUWdncERfT2VlOEdQTDRiZWpoQXxBQ3Jtc0tteUZ0UGJGQWdfZG9fTUNxamZqLTRNRUljenVHVWdRVXhKTkFySmJlWWhGS1lwZy1PdUZwQlhNNmxkN09CdlAxbHlsVzZvYW1OZnZaQVQxT2JxWTZydTRJa2RGcGdKV09VcGJTYm9kVjllYXZoV293bw&q=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F416vYWInCGKaGXTMCbqK9A%3Fsi%3D-u1nI_WUSYOGDDPaAp-uLQ%26context%3Dspotify%253Aalbum%253A52GmFR92DyrgBPj2MDMI0d&v=jymN5Qvedlg",
+      soundCloud: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHJFdEtseFVZQl9LY21qN1A3UnhKY0RJY1NXUXxBQ3Jtc0ttaHFMaXVmRVhXc1YyWDJHTHFmdnBDSFA4TnNFd3Q0a3NsRUhUdENNUkNjVkk0d2ZsWUMwXzFpcWx6WW1GZ0xDMXdUSEktdXVBNmJvYW5fcUdNQWhOZDdQSEpldTFySElFajBFVWhEbWhBQzl2djZEVQ&q=https%3A%2F%2Fon.soundcloud.com%2Fkorik&v=jymN5Qvedlg",
+      appleMusic: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbUkwYjRHYmdiMWFUVDRXeVpJMF9KRVlxQ0l5Z3xBQ3Jtc0ttUEQ1ZGNCRDYxUlFaZlhmWE9JQ3lsWkU4Unl0b1JIRnhFeFdYblVWYVY3ZjJ0Q1FDSF9fQlVYVXdqOHZvUGVmTUltSVBSdjVpTFRBLUs5Z0NkM09FWHE0SnpNUzVhNmo2dEFmdHY3YkNCQWJrOWVGVQ&q=https%3A%2F%2Fmusic.apple.com%2Fin%2Falbum%2Fjeona-morh-remix%2F1745091777%3Fi%3D1745091924&v=jymN5Qvedlg"
     },
+    videosrc: "https://www.youtube.com/embed/jymN5Qvedlg?si=y6Lzg7PsFcuIl9fL" ,
     credits: [
-      "Production: Rhythm & Muse",
-      "Mixing: Rhythm & Muse",
-      "Mastering: David Wilson",
-      "All Elements: The Voltage & Rhythm & Muse"
+      "Artist- KULDEEP MANAK "
     ],
     description: "An electronic music project with innovative sound design and pulsating rhythms. We collaborated closely with The Voltage to create a cutting-edge dance music experience."
   },
   {
-    id: 5,
-    title: "Soul Revival",
-    artist: "James Robinson",
-    category: "R&B",
-    image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
+    id: 6,
+    title: "KASOOR",
+    artist: "COACHSAHB X KAASH",
+    category: "Rock",
+    image: "https://i.ytimg.com/vi/2LxOUVNO48E/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBYLhRvEg1A-LqzJXxt-FoW7KMtHA",
     streamingLinks: {
-      spotify: "https://spotify.com",
-      appleMusic: "https://music.apple.com"
+      spotify: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbFpCbk5uTXZYSk9sWGVXdWQ0UGtHeDYwcFZoQXxBQ3Jtc0tscHNqS0tzSzF1dVRtMFZPREd5MldBLXctZmpSejV3Vm83cEpMLXdKM2o4Y3k3YjNFOXV1ZzRQMkt3azZ4SjVTUktudmNrcy1XaG16NUp0eWdxN1Nod2hPdHdaVTFMdnMzMnpRZndMR2hQSmt2OG9xdw&q=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66TQoaX8xxsFOb2wdk2Sp2&v=2LxOUVNO48E",
+      appleMusic: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXhWNUVfeER6QXVDclhoZWRsN2hodlJKajdTUXxBQ3Jtc0tsV3dvRHFxN2JGdkFHc1V3V1U3b2JuMGNYc2N5RWxnd1c3dG91aWNnN2lYYjN5QVJnbzFVSWN3WWVIdmxRSWNWZmctQVhfWEl4cUQwSXJaTXV0ODR5REE5YzZLZTMtZ2d5WEF2NllIWS1UWGRrLTVvcw&q=http%3A%2F%2Fitunes.apple.com%2Falbum%2Fid%2F1796144621&v=2LxOUVNO48E",
+      // soundCloud: "https://soundcloud.com"
     },
+    videosrc: "https://www.youtube.com/embed/2LxOUVNO48E?si=7yGxL_CyRdx6ehA-" ,
     credits: [
-      "Production: Rhythm & Muse",
-      "Mixing: Alex Johnson",
-      "Mastering: Sarah Phillips",
-      "Vocals: James Robinson",
-      "Bass: Michael Brown",
-      "Drums: Chris Davis"
+       "Artist- KAASH "
+    ],
+    description: "A hard-hitting rock album with powerful guitars and dynamic performances. We worked with Thunder Strike to capture their raw energy and translate it into a polished recording."
+  },
+  {
+    id: 5,
+    title: "NEHRO PAAR BANGLA",
+    artist: "ROMEY GILL X COACHSAHB",
+    category: "R&B",
+    image: "https://i.ytimg.com/vi/Sz5vARBok7o/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBno9C89NjqkCtGNPRav9V5dVbvVw",
+    streamingLinks: {
+      // spotify: "https://spotify.com",
+      soundCloud: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbjFNbGczdW55SXAxUS1vQzFQc1FsU1RFdXhDZ3xBQ3Jtc0trZ1pRdEVpcWVpSGlVZmRGOW5uMXVKRmVqS2xKd2dJVUVZeThlVmd1R09wQXpLNFRvTGtBWXNkLXIybXVWMHZoMEdKSWdKZW5jU0s0TXEyOXZDOVZxcl9qaWxsaWxsZGFNOUtnTkk1aUFvY0EyUzQ1Yw&q=https%3A%2F%2Fsoundcloud.com%2Fcoachsahb%2Fnehro-paar-bangla&v=Sz5vARBok7o"
+    },
+    videosrc: "https://www.youtube.com/embed/Sz5vARBok7o?si=L8o6aanCxUFfSdl5" ,
+    credits: [
+      "Artist- ROMEY GILL "
     ],
     description: "A soulful R&B album with smooth vocals and rich instrumentation. This project blends classic soul influences with modern production techniques."
   },
   {
-    id: 6,
-    title: "Rock Revolution",
-    artist: "Thunder Strike",
-    category: "Rock",
-    image: "https://images.unsplash.com/photo-1598387993281-cecf8B71a8f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1741&q=80",
+    id: 7,
+    title: "BAND AKHIAN",
+    artist: "COACHSAHB X KAASH",
+    category: "R&B",
+    image: "https://i.ytimg.com/vi/rEk0AfEX8Ac/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLD6juTND1asAXblZjsyaYYYesLyOg",
     streamingLinks: {
-      spotify: "https://spotify.com",
-      appleMusic: "https://music.apple.com",
-      soundCloud: "https://soundcloud.com"
+      spotify: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmEzaDg0RHMtblpnbEdEWkliSm1YVml5VTRBd3xBQ3Jtc0ttaGwxU2V6aWRwbi1DUmRST1JDY1NLdUN6RTFTVUk5MWdHREtIN2xZVllnWnpqZm9oRE9TOTU3UDhXX0k2em5OR0RuanlMSkEtbzJZRzRDSzhqVlhWSGhpRVF1WjVDWHFrUVpxR1JuVXRBaC1VaHNmYw&q=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66TQoaX8xxsFOb2wdk2Sp2&v=rEk0AfEX8Ac",
+      appleMusic: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTBOdmdKcjlyNVdNSmRXT2lySU45UFd2T3Ywd3xBQ3Jtc0trd0Y0TTl0REtrX0pvX3hFdTVoMHJwUnFGM25IdHZBeV9OZkRsX2VSUjBGQWJDQm9lTi1XTDc2cWpOYWM4a3BaYTlETlhzejU0WnlNUkUtaG9Ldzdha1VIdTRWY204bTJ0UzFfLU1UelBXeXp1NTdPMA&q=http%3A%2F%2Fitunes.apple.com%2Falbum%2Fid%2F1796144621&v=rEk0AfEX8Ac",
+      // soundCloud: "https://soundcloud.com"
     },
+    videosrc: "https://www.youtube.com/embed/rEk0AfEX8Ac?si=4KYZS8KfBdsIjfym" ,
     credits: [
-      "Production: Rhythm & Muse",
-      "Mixing: John Smith",
-      "Mastering: David Wilson",
-      "Vocals: Tom Richards",
-      "Guitar: Mike Johnson",
-      "Bass: David Lee",
-      "Drums: Chris Adams"
+       "Artist- KAASH "
     ],
-    description: "A hard-hitting rock album with powerful guitars and dynamic performances. We worked with Thunder Strike to capture their raw energy and translate it into a polished recording."
+    description: "An electrifying rock album driven by intense guitar riffs and high-energy performances. We collaborated with Thunder Strike to harness their raw power and deliver a refined, impactful sound."
+  },
+  {
+    id: 8,
+    title: "LAL RANG DI",
+    artist: "CHAMKILA X AMARJOT X COACHSAHB",
+    category: "Pop",
+    image: "https://i.ytimg.com/vi/8IJHWVuJ714/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDqkbbDikIEtTbopv7Z1vaxIBw_ow",
+    streamingLinks: {
+      // spotify: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbmEzaDg0RHMtblpnbEdEWkliSm1YVml5VTRBd3xBQ3Jtc0ttaGwxU2V6aWRwbi1DUmRST1JDY1NLdUN6RTFTVUk5MWdHREtIN2xZVllnWnpqZm9oRE9TOTU3UDhXX0k2em5OR0RuanlMSkEtbzJZRzRDSzhqVlhWSGhpRVF1WjVDWHFrUVpxR1JuVXRBaC1VaHNmYw&q=https%3A%2F%2Fopen.spotify.com%2Falbum%2F66TQoaX8xxsFOb2wdk2Sp2&v=rEk0AfEX8Ac",
+      // appleMusic: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbTBOdmdKcjlyNVdNSmRXT2lySU45UFd2T3Ywd3xBQ3Jtc0trd0Y0TTl0REtrX0pvX3hFdTVoMHJwUnFGM25IdHZBeV9OZkRsX2VSUjBGQWJDQm9lTi1XTDc2cWpOYWM4a3BaYTlETlhzejU0WnlNUkUtaG9Ldzdha1VIdTRWY204bTJ0UzFfLU1UelBXeXp1NTdPMA&q=http%3A%2F%2Fitunes.apple.com%2Falbum%2Fid%2F1796144621&v=rEk0AfEX8Ac",
+      soundCloud: "https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXRpc00yTnJMb255Yy1QbzZBSUxwcVJBOW9GZ3xBQ3Jtc0tuN2dQTUkzZ3JSNlN0eWs3bFp0NGFWdHZ0cWpHQ1V0MmxmUC1wN3Q1TEJnMDJwZXRmbVYxcEJpM282dHlPSFNVODh4NXJWTGFPM3ZCRmlqYkhkNmE0THVhaFVKWDVzeHhGVlg2NXB4ZHpzeUpJdkxmYw&q=https%3A%2F%2Fsoundcloud.com%2Fcoachsahb%2Flal-rang-di&v=8IJHWVuJ714"
+    },
+    videosrc: "https://www.youtube.com/embed/8IJHWVuJ714?si=PWQgr7Wp7DQAhHLZ" ,
+    credits: [
+       "Artist- CHAMKILA , AMARJOT "
+    ],
+    description: "A vibrant pop album filled with catchy hooks and dynamic vocals. We teamed up with Thunder Strike to channel their infectious energy into a polished, radio-ready production."
   }
 ];
 

@@ -4,41 +4,39 @@ import { Check } from 'lucide-react';
 
 const AboutPage: React.FC = () => {
   const milestones = [
-    {
-      year: 2008,
-      title: "Studio Founding",
-      description: "Rhythm & Muse was founded with a vision to create a space where artists could bring their musical dreams to life."
-    },
-    {
-      year: 2010,
-      title: "First Gold Record",
-      description: "Our production work on 'Midnight Memories' earned our first gold record, marking a pivotal moment in our journey."
-    },
-    {
-      year: 2013,
-      title: "Studio Expansion",
-      description: "We expanded our facilities to include two additional recording rooms and state-of-the-art equipment."
-    },
-    {
-      year: 2015,
-      title: "Industry Award Recognition",
-      description: "Our team received multiple industry awards for production excellence and engineering innovation."
-    },
-    {
-      year: 2018,
-      title: "International Collaborations",
-      description: "We began working with international artists, expanding our reach and influence globally."
-    },
-    {
-      year: 2021,
-      title: "Digital Innovation",
-      description: "Launched remote production services, allowing us to collaborate with artists worldwide."
-    },
-    {
-      year: 2024,
-      title: "Present Day",
-      description: "Continuing to push boundaries and create groundbreaking music with artists from all genres."
-    }
+    
+      {
+        year: 2020,
+        title: "Hustle and Learning",
+        description: "Coachsahb began his journey into music production, mastering professional software and refining his unique sound."
+      },
+      {
+        year: 2021,
+        title: "Remixing the Legends Hits",
+        description: "He started remixing iconic tracks, paying tribute to legendary artists while adding his own creative flair."
+      },
+      {
+        year: 2022,
+        title: "Breakthrough Hits",
+        description: "Delivered major hits like 'Jeona Morh' and 'Do Pall', gaining recognition across the industry and among fans."
+      },
+      {
+        year: 2023,
+        title: "Collaborations & Growth",
+        description: "Collaborated with emerging artists across genres, expanding his creative network and production influence."
+      },
+      {
+        year: 2024,
+        title: "Gold Record Milestone",
+        description: "His original works and productions reached gold record status, cementing his reputation in the music industry."
+      },
+      {
+        year: 2025,
+        title: "Working with the Best",
+        description: "Currently collaborating with renowned professionals, pushing boundaries and continuing to shape the sound of modern music."
+      }
+    
+    
   ];
 
   const stats = [
@@ -226,17 +224,17 @@ const AboutPage: React.FC = () => {
           {/* Team Member 2 */}
           <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.1s' }}>
             <div className="aspect-w-1 aspect-h-1 relative">
-              <img 
-                src="https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1635&q=80" 
-                alt="Sarah Phillips - Senior Sound Engineer" 
-                className="w-full h-64 object-cover object-center"
-              />
+            <img 
+              src="images/WhatsApp Image 2025-05-27 at 00.24.05.jpeg" 
+              alt="Sarah Phillips - Senior Sound Engineer" 
+              style={{ height: '320px', width: '100%', objectFit: 'cover', objectPosition: 'center' }}
+            />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Sarah Phillips</h3>
-              <p className="text-purple mb-4">Senior Sound Engineer</p>
+              <h3 className="text-xl font-semibold mb-1">GURSHAAN SINGH HUNDAL</h3>
+              <p className="text-purple mb-4"> Lead Remix Producer </p>
               <p className="text-gray-600">
-                Sarah's technical prowess and keen ear for detail have made her one of the most sought-after engineers in the industry.
+              Gurshaan leads the creative direction of all remix projects, bringing energy, style, and innovation to every track.
               </p>
             </div>
           </div>
@@ -245,16 +243,16 @@ const AboutPage: React.FC = () => {
           <div className="glass-card overflow-hidden rounded-xl transition-all duration-300 hover:shadow-xl animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="aspect-w-1 aspect-h-1 relative">
               <img 
-                src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" 
+                src="images/WhatsApp Image 2025-05-27 at 01.07.27.jpeg" 
                 alt="Michael Brown - Music Director" 
-                className="w-full h-64 object-cover object-center"
+                style={{ height: '320px', width: '100%', objectFit: 'cover', objectPosition: 'center' }}
               />
             </div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Michael Brown</h3>
-              <p className="text-purple mb-4">Music Director</p>
+              <h3 className="text-xl font-semibold mb-1">SURAJ PRATAP SINGH</h3>
+              <p className="text-purple mb-4">Project Coordinator</p>
               <p className="text-gray-600">
-                Michael's diverse musical background and creative approach bring unique perspectives to each production.
+              Suraj manages timelines, communication, and collaboration across the remix team, ensuring smooth execution of every project.
               </p>
             </div>
           </div>

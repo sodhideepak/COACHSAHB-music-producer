@@ -102,14 +102,14 @@ const Footer: React.FC = () => {
             <div className="flex flex-col space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-purple-light" />
-                <a href="mailto:info@rhythmandmuse.com" className="text-gray-300 hover:text-purple-light transition-colors duration-300">
-                  info@rhythmandmuse.com
+                <a href="mailto:gurshaanhundal@yahoo.Com" className="text-gray-300 hover:text-purple-light transition-colors duration-300">
+                gurshaanhundal@yahoo.Com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-purple-light" />
-                <a href="tel:+15551234567" className="text-gray-300 hover:text-purple-light transition-colors duration-300">
-                  +1 (555) 123-4567
+                <a href="tel: +919915455467" className="text-gray-300 hover:text-purple-light transition-colors duration-300">
+                +91 99154 55467
                 </a>
               </div>
               <Link to="/contact#booking" className="bg-purple-light text-white px-4 py-2 rounded-md font-medium transition-all duration-300 hover:bg-purple inline-flex items-center justify-center w-full sm:w-auto mt-2">
